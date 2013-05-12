@@ -1,0 +1,13 @@
+<% layout('layout') -%>
+<% if (message) { %>
+<p><%= message %></p>
+<% } %>
+<form action="/login-otp" method="post">
+	<div>
+	<label>Code:</label>
+	<input type="text" name="code"/><br/>
+	</div>
+	<div>
+	<input type="submit" value="Submit"/>
+	</div>
+</form>
