@@ -1,6 +1,6 @@
 {
   "name": "passport-totp",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "TOTP authentication strategy for Passport.",
   "keywords": ["passport", "otp", "oath", "totp", "auth", "authn", "authentication"],
   "repository": {
