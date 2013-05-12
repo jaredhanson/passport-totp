@@ -87,15 +87,6 @@ passport.use(new TotpStrategy(
       if (err) { return done(err); }
       return done(null, obj.key, obj.period);
     });
-  },
-  function(user, key, counter, delta, done) {
-    // resync function, save new counter value
-    //console.log('resync: ' + key + ' ' + counter);
-    
-    saveKeyForUserId(user.id, { key: key, counter: counter }, function(err) {
-      if (err) { return done(err); }
-      return done(null);
-    });
   }
 ));
 
