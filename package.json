@@ -2,7 +2,15 @@
   "name": "passport-totp",
   "version": "0.0.1",
   "description": "TOTP authentication strategy for Passport.",
-  "keywords": ["passport", "otp", "oath", "totp", "auth", "authn", "authentication"],
+  "keywords": [
+    "passport",
+    "otp",
+    "oath",
+    "totp",
+    "auth",
+    "authn",
+    "authentication"
+  ],
   "repository": {
     "type": "git",
     "url": "git://github.com/jaredhanson/passport-totp.git"
@@ -15,15 +23,17 @@
     "email": "jaredhanson@gmail.com",
     "url": "http://www.jaredhanson.net/"
   },
-  "licenses": [ {
-    "type": "MIT",
-    "url": "http://www.opensource.org/licenses/MIT" 
-  } ],
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://www.opensource.org/licenses/MIT"
+    }
+  ],
   "main": "./lib",
   "dependencies": {
-    "pkginfo": "0.2.x",
-    "passport": "~0.1.1",
-    "notp": "2.0.x"
+    "notp": "2.0.x",
+    "passport-strategy": "1.0.0",
+    "pkginfo": "0.2.x"
   },
   "devDependencies": {
     "mocha": "1.x.x",
@@ -32,5 +42,7 @@
   "scripts": {
     "test": "NODE_PATH=./lib node_modules/.bin/mocha --reporter spec --require test/bootstrap/node test/*.test.js"
   },
-  "engines": { "node": ">= 0.4.0" }
+  "engines": {
+    "node": ">= 0.4.0"
+  }
 }
